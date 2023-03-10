@@ -5,6 +5,27 @@
 @tailwind components;
 
 @layer components {
+  .link {
+    @apply font-poppins text-lg
+    lg:text-xl text-light
+  }
+  
+  .link.router-link-exact-active {
+    @apply bg-gradient-to-br from-secoundary 
+    to-accent bg-clip-text text-transparent
+  }
+
+  .nav-btn {
+    @apply bg-gradient-to-br from-secoundary 
+    to-accent bg-clip-text text-transparent  
+    inline-block md:hidden 
+  }
+
+  .cv-link {
+    @apply text-secoundary font-montserrat
+    flex items-center gap-2 absolute bottom-12
+    text-base md:text-lg
+  }
 }
 
 @layer utilities {

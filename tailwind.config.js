@@ -8,17 +8,19 @@ module.exports = {
 	  "./nuxt.config.{js,ts}", 
   ],
   theme: {
-    colors: {
-      primary: '#F0F0F0',
-      secoundary: '#FC4350',
-      accent: '#444DF8',
-      light: '#44435D'
+    fontFamily: {
+      montserrat: ['montserrat'],
+      poppins: ['poppins'],
+      raleway: ['raleway'],
+      fugaz: ['Fugaz One']
     },
+
     extend: {
-      fontFamily: {
-        montserrat: ['montserrat'],
-        poppins: ['poppins'],
-        raleway: ['raleway']
+      colors: {
+        primary: '#F0F0F0',
+        secoundary: '#FC4350',
+        accent: '#444DF8',
+        light: '#44435D'
       },
     },
   },
