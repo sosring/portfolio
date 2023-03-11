@@ -18,7 +18,7 @@
   .nav-btn {
     @apply bg-gradient-to-br from-secoundary 
     to-accent bg-clip-text text-transparent  
-    inline-block md:hidden 
+    inline-block md:hidden cursor-pointer
   }
 
   .cv-link {
@@ -29,4 +29,7 @@
 }
 
 @layer utilities {
+  * {
+   -webkit-tap-highlight-color: transparent;
+  }
 }

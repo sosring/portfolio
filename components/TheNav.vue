@@ -18,7 +18,8 @@
       </li>
     </ul>
 
-    <button class="nav-btn">
+    <button class="nav-btn"
+     @click="toggleNav">
       <i class="fas fa-bars text-3xl"></i>
     </button>
   </nav>
@@ -30,4 +31,12 @@
     { label: 'Portfolio', path: '/portfolio' },
     { label: 'Contact', path: '/Contact' }
   ]
+
+  const props = defineProps({
+    showNav: Boolean 
+  });
+
+  const emits = defineEmits(['update:showNav'])
+
+  const toggleNav = () => emits('update:showNav', true)
 </script>
