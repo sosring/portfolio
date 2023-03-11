@@ -15,6 +15,7 @@
     <ul class="grid gap-2">
       <li v-for="route in routes">
        <nuxt-link :to="route.path"
+        @click="closeNav"
         class="link">
         {{ route.label }}
        </nuxt-link>
