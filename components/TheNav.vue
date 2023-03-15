@@ -6,7 +6,8 @@
     
     <nuxt-link to="/">
       <img src="/favicon.svg"
-       alt="logo">
+       alt="logo"
+       class="h-12 w-12">
     </nuxt-link>
 
     <ul class="hidden md:flex gap-8">

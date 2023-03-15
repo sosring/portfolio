@@ -1,16 +1,14 @@
 <template>
-  <div class="bg-primary">
 
+  <div>
     <header class="fixed inset-0 
-     bottom-auto z-20">
+     bottom-auto z-20 backdrop-blur-md 
+     bg-primary">
       <TheNav 
        v-model:showNav="showSideNav" />
     </header>
 
-    <TheSideNav 
-     v-model:showNav="showSideNav" />
-
-    <main class="h-screen w-screen">
+    <main class="h-screen">
       <slot />
     </main>
   </div>
@@ -19,5 +17,5 @@
 <script setup>
   import gsap from 'gsap'
 
-  const showSideNav = ref(false)
+  const showSideNav = ref(true)
 </script>

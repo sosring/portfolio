@@ -1,4 +1,5 @@
 <template>
-  
-  <HeroSection />
+
+  <Hero-Section />
+  <About />
 </template>
