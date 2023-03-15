@@ -2,7 +2,7 @@
 
   <section class="container 
     mx-auto px-4 py-12
-   font-montserrat">
+    font-montserrat">
     
     <article class="font-thin
      grid gap-4 md:grid-cols-2">

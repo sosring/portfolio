@@ -1,7 +1,8 @@
 <template>
 
-  <section class="container h-full
-   mx-auto grid items-center  
+  <section class="container 
+   h-2/4 sm:h-full mx-auto grid 
+   items-end sm:items-center  
    justify-center px-4">
 
     <article class="article-wrapper">
@@ -55,7 +56,7 @@
     z-index: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 640px) {
 
     .heading{
       -webkit-text-stroke: 1px #FC4350;

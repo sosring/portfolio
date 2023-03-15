@@ -11,13 +11,13 @@
       <div class="stack-wrapper
        mt-4 grid grid-cols-3 gap-4">
 
-        <div class="flex items-end gap-4
-         justify-evenly p-3 shadow rounded-md"
+        <div class="flex items-end 
+        justify-around p-3 shadow rounded-md"
          v-for="stack in stacks">
 
           <p v-html="stack.label"
-           class="font-raleway 
-           font-medium text-gray-500"></p>
+           class="font-raleway text-sm
+           sm:text-base font-medium text-gray-500"></p>
 
           <img :src="`/icons/${stack.icon}.svg`" 
            :alt="stack.icon"
