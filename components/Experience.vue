@@ -6,19 +6,46 @@
 
       <h3 class="heading stroke 
        text-secoundary font-thin">
-        Experience
+        Recent Works
       </h3>
 
-       <div class="para mt-4">
-        <p>
-         Hi there, I’m Sosring, I’ve always been passionate about Linux operating systems and the idea of being able to configure my own system environment. It was this passion that led me to start my journey as a developer.
-        </p>
+       <div class="para mt-4"
+        v-for="work in works">
 
-        <p>
-         Throughout the year, I’ve discovered my passion for the web development and endless possibilities it offers for combining creativity and functionality.
-        </p>
+        <h4 v-html="work.client"></h4>
+        <p>Date - {{work.date}}</p>
+
+        <ul class="px-4 sm:px-8 mt-4">
+          <li v-html="point"
+           v-for="point in work.points"
+           class="list-disc"></li>
+        </ul>
        </div>
     </article>
 
   </section>
 </template>
+
+<script setup>
+  const works = [
+    {
+     client: 'Onc Foundation', 
+     date: '12/02/03', 
+     points: [
+      'Built a full-stack website with custom design',
+      'Integrated a razor-pay and database to record payment and volunteer information',
+      'Included dynamic content such as campaigns and galleries on the website',
+      'Conducted on-page and off-page SEO to optimize the website for search engines',
+      "Implemented social media marketing strategies to increase the website's visibility and engagement"
+     ]
+    },
+    {
+     client: 'Futurescape Developers', 
+     date: '8/01/03', 
+     points: [
+      'Tasked with creating a custom-designed static website',
+      'Included an email form on the website'
+     ]
+    }
+  ]
+</script>
