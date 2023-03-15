@@ -4,13 +4,13 @@
    mx-auto grid items-center  
    justify-center px-4">
 
-    <article>
+    <article class="article-wrapper">
       <h1 class="heading
        font-fugaz text-primary">
        sosring
       </h1>
 
-      <div class="font-raleway">
+      <div class="font-montserrat font-medium">
         <h3 class="sub-heading text-secoundary">
           Full-Stack Developer
         </h3>
@@ -32,9 +32,6 @@
   </section>
 </template>
 
-<script setup>
-</script>
-
 <style scoped>
 
   .heading {
@@ -54,7 +51,7 @@
     text-rendering: optimizeLegibility;
     transform: translate(3%, -7%);
     position: absolute;
-    animation: shift .7s ease-in;
+    animation: shift .8s;
     z-index: 0;
   }
 

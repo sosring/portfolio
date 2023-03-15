@@ -40,4 +40,23 @@
   html {
     height: 100%;
   }
+  
+  .stroke::before,
+  .stroke::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 2rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+  }
+
+  @media (max-width: 768px) {
+
+    .stroke::after,
+    .stroke::before {
+      -webkit-text-stroke: 1px #444DF8;
+      transform: translateY(-.5rem);
+    }
+  }
 }

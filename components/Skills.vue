@@ -1,17 +1,22 @@
 <template>
-    <article class="mt-8 font-raleway font-thin">
-      <h3 class="heading text-secoundary">
+    <article class="mt-12 font-montserrat font-thin">
+
+      <h3 class="heading 
+       stroke text-secoundary">
        Tech Stack
       </h3>
 
       <div class="stack-wrapper
        mt-4 grid grid-cols-3 gap-4">
 
-        <div class="flex items-end gap-4"
+        <div class="flex items-end gap-4
+         justify-evenly p-3 shadow rounded-md"
          v-for="stack in stacks">
 
           <p v-html="stack.label"
-           class="font-raleway"></p>
+           class="font-raleway 
+           font-medium text-gray-500"></p>
+
           <img :src="`/icons/${stack.icon}.svg`" 
            :alt="stack.icon"
            class="h-8 w-8">
@@ -43,6 +48,6 @@
   }
 
   .stack-wrapper {
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
   }
 </style>
