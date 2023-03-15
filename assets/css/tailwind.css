@@ -33,12 +33,21 @@
 }
 
 @layer utilities {
+
   * {
-   -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
   }
 
   html {
     height: 100%;
+  }
+
+  .heading {
+    font-size: clamp(1.5rem, 2.5vw, 2.7rem);
+  }
+
+  .para {
+    font-size: clamp(.8rem, 2.5vw, 1.1rem);
   }
   
   .stroke::before,
@@ -55,6 +64,8 @@
 
     .stroke::after,
     .stroke::before {
+      width: 1rem;
+      margin: 0 ;
       -webkit-text-stroke: 1px #444DF8;
       transform: translateY(-.5rem);
     }

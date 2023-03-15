@@ -2,4 +2,5 @@
 
   <Hero-Section />
   <About />
+  <Experience />
 </template>

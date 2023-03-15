@@ -1,5 +1,7 @@
 <template>
-    <article class="mt-12 font-montserrat font-thin">
+
+    <article class="mt-12 py-12
+     font-montserrat font-thin">
 
       <h3 class="heading 
        stroke text-secoundary">
@@ -22,7 +24,6 @@
            class="h-8 w-8">
         </div>
       </div>
-      <img src="" alt="">
     </article>
 </template>
 
@@ -39,14 +40,6 @@
 </script>
 
 <style scoped>
-  .heading {
-    font-size: clamp(1.7rem, 5vw, 2.7rem);
-  }
-
-  .para {
-    font-size: clamp(.9rem, 2.5vw, 1.3rem);
-  }
-
   .stack-wrapper {
     grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
   }
