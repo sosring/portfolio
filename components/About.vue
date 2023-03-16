@@ -16,11 +16,10 @@
 
        <div class="para space-y-4">
         <p>
-         Hi there, I’m Sosring, I’ve always been passionate about Linux operating systems and the idea of being able to configure my own system environment. It was this passion that led me to start my journey as a developer.
+         Hi, I'm Sosring, a self-taught web developer with a passion for creating engaging websites. I love experimenting with the latest technologies and design trends to craft beautiful and intuitive user interfaces. 
         </p>
-
         <p>
-         Throughout the year, I’ve discovered my passion for the web development and endless possibilities it offers for combining creativity and functionality.
+         When I'm not coding, I'm either listening to  jazz music, sketching, or enjoying a good cup of coffee. With a dedication to collaboration and attention to detail, I'm committed to exceeding my clients' expectations. Let's work together to create something amazing!
         </p>
        </div>
       </div>

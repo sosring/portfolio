@@ -10,6 +10,7 @@
 
     <main class="h-screen">
       <slot />
+      <Socials />
     </main>
   </div>
 </template>
