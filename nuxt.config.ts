@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-headlessui',
     '@vueuse/nuxt',
+    ['@pinia/nuxt', { autoImports: ['defineStore', 'acceptHMRUpdate'], }]
   ],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
