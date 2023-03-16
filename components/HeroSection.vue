@@ -1,9 +1,8 @@
 <template>
 
-  <section class="container 
+  <section class="container
    h-2/4 sm:h-full mx-auto grid 
-   items-end sm:items-center  
-   justify-center px-4">
+   items-center justify-center px-4">
 
     <article class="article-wrapper">
       <h1 class="heading
@@ -52,7 +51,7 @@
     text-rendering: optimizeLegibility;
     transform: translate(3%, -7%);
     position: absolute;
-    animation: shift .8s;
+    animation: shift 1.3s;
     z-index: 0;
   }
 

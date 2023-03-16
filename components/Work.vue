@@ -15,12 +15,14 @@
         <h4 v-html="work.client"
          class="text-accent font-medium
          text-base sm:text-lg font-raleway"></h4>
-        <p class="text-sm sm:text-base">Date - {{work.date}}</p>
+        <p class="text-sm md:text-base">Date - {{work.date}}</p>
 
         <ul class="px-4 sm:px-8 mt-4">
-          <li v-html="point"
-           v-for="point in work.points"
-           class="list-disc"></li>
+          <li v-for="point in work.points"
+           class="list-disc">
+           <p v-html="point" 
+            class="text-sm sm:text-base md:text-lg"></p>
+          </li>
         </ul>
        </div>
     </article>

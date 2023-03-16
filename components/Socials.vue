@@ -1,9 +1,11 @@
 <template>
   
   <div class="hidden md:grid 
-   gap-4 fixed bottom-8 left-8">
+   gap-2 fixed bottom-8 left-8">
+
     <a v-for="social in socials"
-     class="text-3xl text-secoundary"
+     class="text-3xl text-secoundary
+     hover:-translate-y-1 duration-200"
      :class="`fab fa-${social.icon}`"
      target="blank"
      :href="social.link"></a>
