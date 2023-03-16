@@ -1,6 +1,7 @@
 <template>
   <section class="container h-full 
-   mx-auto px-4 py-12 font-montserrat">
+   mx-auto px-4 py-12 font-montserrat
+   flex items-center">
     
     <article class="font-thin">
 

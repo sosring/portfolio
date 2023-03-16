@@ -20,11 +20,7 @@
         </p>
       </div>
 
-        <button class="bg-gradient-to-br 
-         from-secoundary to-accent mt-6
-         bg-clip-text text-transparent 
-         py-2 px-4 rounded text-xs sm:text-sm 
-         border-2">
+        <button class="action-btn">
           Get In Touch 
         </button>
     </article>
