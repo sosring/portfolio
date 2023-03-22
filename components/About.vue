@@ -9,10 +9,11 @@
 
      <div class="space-y-4">
 
-      <h3 class="heading stroke 
-       text-secoundary font-thin">
+      <h2 class="heading stroke 
+       text-secoundary font-thin"
+       id="0">
        About
-      </h3>
+      </h2>
 
        <div class="para space-y-4">
         <p>

@@ -31,6 +31,7 @@
   const stacks = [
     { icon: 'tailwind', label: 'Tailwind' },
     { icon: 'sass', label: 'SASS' },
+    { icon: 'javascript', label: 'Javascript' },
     { icon: 'vue-js', label: 'Vue' },
     { icon: 'nuxt-js', label: 'Nuxt' },
     { icon: 'node', label: 'Node' },
