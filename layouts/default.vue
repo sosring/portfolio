@@ -8,7 +8,8 @@
        v-model:showNav="showSideNav" />
     </header>
 
-    <main class="h-screen pt-16 md:pt-0">
+    <main class="h-screen 
+     pt-16 md:pt-0">
       <slot />
       <Socials />
     </main>

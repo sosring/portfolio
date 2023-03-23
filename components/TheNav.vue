@@ -11,12 +11,12 @@
     </nuxt-link>
 
     <ul class="hidden md:flex gap-8">
-      <li v-for="(route, index) in routes">
-       <nuxt-link :to="`#${index}`"
-        @click="updateCurrentSection(index)"
+      <li v-for="anchor in anchors">
+       <nuxt-link :to="`#${anchor.toLowerCase()}`"
+        @click="updateCurrentSection(anchor)"
         class="link"
-        :class="{ 'active': activeSection(index) }">
-        {{ route }}
+        :class="{ 'active': activeSection(anchor) }">
+        {{ anchor }}
        </nuxt-link>
       </li>
     </ul>
@@ -29,17 +29,17 @@
 </template>
 
 <script setup>
-  const routes = [ 'About', 'Portfolio', 'Contact' ]
+  const anchors = [ 'About', 'Portfolio', 'Contact' ]
 
-  const currentSection = useState('currentRouter', () => 0) 
+  const currentSection = useState('currentRouter', () => 'about') 
 
-  const updateCurrentSection = index => {
-    return currentSection.value = index 
+  const updateCurrentSection = anchor => {
+    return currentSection.value = anchor 
   }
 
   const activeSection = computed(() => {
-    return index => {
-      return index === parseInt(currentSection.value)
+    return anchor => {
+      return anchor.toLowerCase() === currentSection.value
     }
   })
 

@@ -7,7 +7,7 @@
 
       <h2 class="heading stroke 
        text-secoundary font-thin"
-       id="2">
+       id="contact">
 
         Contact
       </h2>

@@ -11,7 +11,7 @@
 
       <h2 class="heading stroke 
        text-secoundary font-thin"
-       id="0">
+       id="about">
        About
       </h2>
 
