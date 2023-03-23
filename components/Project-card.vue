@@ -4,7 +4,7 @@
         <div class="w-full mb-4 text-left 
          text-sm flex justify-between">
 
-          <p class="heading" v-html="project.title"></p>
+          <h3 class="heading" v-html="project.title"></h3>
           <ChevronUpIcon
             class="h-5 w-5 text-gray-700 rotate-180 transform"/>
         </div>

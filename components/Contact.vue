@@ -1,7 +1,7 @@
 <template>
-  <section class="container  
-   mx-auto px-4 py-12 font-montserrat
-   flex items-center" id="2">
+  <section class="container mx-auto 
+   px-4 py-12 font-montserrat flex 
+   items-center">
 
     <article class="font-thin">
 

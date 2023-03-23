@@ -18,6 +18,7 @@
         :class="{ 'active': activeSection(anchor) }">
         {{ anchor }}
        </nuxt-link>
+
       </li>
     </ul>
 

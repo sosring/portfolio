@@ -21,7 +21,7 @@
       </div>
 
         <button class="action-btn"
-         @click="$router.push('#2')">
+         @click="$router.push('#contact')">
           Get In Touch 
         </button>
     </article>
