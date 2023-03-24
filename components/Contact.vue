@@ -3,7 +3,7 @@
    pt-12 md:pt-16 font-montserrat
    flex items-center justify-center">
 
-    <article class="text-center">
+    <article class="lg:text-center">
 
       <h2 class="heading stroke 
        text-secoundary font-thin
