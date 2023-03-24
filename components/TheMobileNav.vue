@@ -20,7 +20,7 @@
       <ul class="grid gap-2">
         <li v-for="anchor in anchors">
          <nuxt-link :to="`#${anchor.toLowerCase()}`"
-          @click="updateCurrentSection(anchor)"
+          @click="closeSizeNav"
           class="link">
           {{ anchor }}
          </nuxt-link>
@@ -28,6 +28,7 @@
 
         <a href="/resume.pdf"
          target="blank"
+         @click="closeSizeNav"
          class="text-xl text-secoundary
          underline underline-offset-4">
          Resume
@@ -43,6 +44,7 @@
          hover:-translate-y-1 duration-200"
          :class="`fab fa-${social.icon}`"
          target="blank"
+         @click="closeSizeNav"
          :href="social.link"></a>
       </div>
      </div>

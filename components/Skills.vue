@@ -12,7 +12,7 @@
        mt-4 grid grid-cols-3 gap-4">
 
         <div class="flex items-end 
-        justify-around p-3 shadow rounded-md"
+         justify-around p-3 shadow-md rounded-md"
          v-for="stack in stacks">
 
           <p v-html="stack.label"
