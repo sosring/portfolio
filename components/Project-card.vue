@@ -1,15 +1,18 @@
 <template>
 
-      <article class="px-4 pt-4 pb-2 text-gray-700 
-       border shadow-lg rounded-lg font-raleway bg-gray-50"
+      <article class="text-gray-700   
+        font-raleway overflow-hidden"
        :class="shadowClass">
 
-        <img :src="`/projects/${project.img}.png`" 
-          :alt="project.img"
-          class="rounded-md my-4 object-cover">
+      <img :src="`/projects/${project.img}.png`" 
+        :alt="project.img"
+        class="mb-4 object-cover rounded-md">
 
-          <h3 class="heading font-medium
-           text-gray-600 mb-4" 
+        <div class="px-4 py-2
+         bg-white rounded-md">
+
+          <h3 class="heading 
+           font-medium mb-4 active" 
            v-html="project.name"></h3>
 
           <ul class="flex gap-2 mb-2 sm:mb-4">
@@ -54,6 +57,7 @@
             <p>private repo</p>
          </a>
         </div>
+       </div>
 
     </article>
 </template>
