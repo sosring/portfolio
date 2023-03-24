@@ -14,7 +14,7 @@
     </main>
       <Socials />
       <a href="mailto:sosringofficial@gmail.com"
-        class="email fixed -right-12 bottom-32 
+        class="email fixed -right-20 bottom-32 
         hidden lg:block rotate-90 font-poppins 
         text-sm text-secoundary">
         sosringofficial@gmail.com
