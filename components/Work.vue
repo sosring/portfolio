@@ -39,7 +39,7 @@
      date: '12/02/03', 
      points: [
       'Built a full-stack website with custom design',
-      'Integrated a razor-pay and database to record payment and volunteer information',
+      'Integrated database and google analytics to record volunteer information and overall site traffic',
       'Included dynamic content such as campaigns and galleries on the website',
       'Conducted on-page and off-page SEO to optimize the website for search engines',
       "Implemented social media marketing strategies to increase the website's visibility and engagement"
