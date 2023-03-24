@@ -14,7 +14,7 @@
       </h2>
 
     <div class="project-wrapper 
-     grid gap-8 p-4">
+     grid gap-8 sm:p-4">
 
       <Project-card 
         v-for="(project, index) in useProjects.projects"

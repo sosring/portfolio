@@ -1,7 +1,7 @@
 <template>
 
-  <form class="max-w-xl mx-auto py-4
-   text-sm sm:text-base font-medium
+  <form class="max-w-xl mx-auto px-2
+   py-4 text-sm sm:text-base font-medium
    font-raleway text-gray-500 "
    @submit.prevent="">
   <div class="flex flex-wrap -mx-3 mb-6">

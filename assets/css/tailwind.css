@@ -60,7 +60,7 @@
   }
 
   .heading {
-    font-size: clamp(1.3rem, 2.5vw, 2.7rem);
+    font-size: clamp(1.3rem, 5vw, 2.7rem);
   }
 
   .para {

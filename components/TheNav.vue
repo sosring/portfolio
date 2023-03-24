@@ -1,4 +1,8 @@
 <template>
+<header class="fixed inset-0 
+  bottom-auto z-20 backdrop-blur-md 
+  bg-primary">
+
   <nav class="container mx-auto
    px-3 py-2 sm:py-4 border-b-2 
    border-gray-300 flex items-center
@@ -10,7 +14,8 @@
        class="h-12 w-12">
     </nuxt-link>
 
-    <ul class="hidden md:flex gap-8">
+    <ul class="hidden md:flex 
+     items-end gap-8">
       <li v-for="anchor in anchors">
        <nuxt-link :to="`#${anchor.toLowerCase()}`"
         @click="updateCurrentSection(anchor)"
@@ -20,19 +25,28 @@
        </nuxt-link>
 
       </li>
+
+      <a href="/resume.pdf"
+       target="blanc"
+       class="text-sm text-secoundary border
+       border-secoundary hover:bg-red-200
+       py-2 px-4 duration-200 rounded">
+       Resume
+      </a>
     </ul>
 
-    <button class="nav-btn"
+    <button class="nav-btn
+     fas fa-bars text-3xl"
      @click="toggleNav">
-      <i class="fas fa-bars text-3xl"></i>
     </button>
   </nav>
+ </header>
 </template>
 
 <script setup>
   const anchors = [ 'About', 'Portfolio', 'Contact' ]
 
-  const currentSection = useState('currentRouter', () => 'about') 
+  const currentSection = useState('currentSection', () => 'about') 
 
   const updateCurrentSection = anchor => {
     return currentSection.value = anchor 
@@ -68,5 +82,7 @@
 
   const emits = defineEmits(['update:showNav'])
 
-  const toggleNav = () => emits('update:showNav', true)
+  const toggleNav = () => {
+   emits('update:showNav', true)
+  }
 </script>

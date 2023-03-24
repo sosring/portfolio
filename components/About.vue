@@ -5,7 +5,7 @@
     font-montserrat">
     
     <article class="font-thin
-     grid gap-4 md:grid-cols-2">
+     grid gap-4 sm:gap-6 lg:grid-cols-2">
 
      <div class="space-y-4">
 

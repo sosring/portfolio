@@ -1,31 +1,31 @@
 <template>
 
   <div>
-    <header class="fixed inset-0 
-     bottom-auto z-20 backdrop-blur-md 
-     bg-primary">
-      <TheNav 
-       v-model:showNav="showSideNav" />
-    </header>
+
+  <TheNav 
+    v-model:showNav="showNav" />
+
+  <TheMobileNav 
+    v-model:showNav="showNav" />
 
     <main class="h-screen 
      pt-16 md:pt-0">
       <slot />
     </main>
-      <Socials />
-      <a href="mailto:sosringofficial@gmail.com"
-        class="email fixed -right-20 bottom-32 
-        hidden lg:block rotate-90 font-poppins 
-        text-sm text-secoundary">
-        sosringofficial@gmail.com
-      </a>
+
+    <Socials />
+
+    <a href="mailto:sosringofficial@gmail.com"
+      class="email fixed -right-20 bottom-32 
+      hidden lg:block rotate-90 font-poppins 
+      text-sm text-secoundary">
+      sosringofficial@gmail.com
+    </a>
   </div>
 </template>
 
 <script setup>
-  import gsap from 'gsap'
-
-  const showSideNav = ref(true)
+  const showNav = ref(false)
 </script>
 
 <style scoped>

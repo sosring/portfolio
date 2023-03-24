@@ -1,6 +1,6 @@
 <template>
   
-  <div class="socials hidden lg:grid 
+  <div class="hidden lg:grid 
    gap-2 fixed bottom-8 left-8">
 
     <a v-for="social in socials"
