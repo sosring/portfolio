@@ -13,7 +13,8 @@
         Somethings I've Built
       </h2>
 
-    <div class="project-wrapper grid gap-8">
+    <div class="project-wrapper 
+     grid gap-8 p-4">
 
       <Project-card 
         v-for="(project, index) in useProjects.projects"

@@ -4,12 +4,14 @@
         font-raleway overflow-hidden"
        :class="shadowClass">
 
+    <!--
       <img :src="`/projects/${project.img}.png`" 
         :alt="project.img"
         class="mb-4 object-cover rounded-md">
+    -->
 
         <div class="px-4 py-2
-         bg-white rounded-md">
+         bg-gray-50 rounded-md">
 
           <h3 class="heading 
            font-medium mb-4 active" 
