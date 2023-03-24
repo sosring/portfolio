@@ -1,8 +1,8 @@
 <template>
 
-  <section class="container
-   h-2/4 sm:h-full mx-auto grid 
-   items-center justify-center px-4">
+  <section class="container h-2/4 
+   sm:h-full mx-auto grid items-center 
+   justify-center px-4">
 
     <article class="article-wrapper">
       <h1 class="heading
