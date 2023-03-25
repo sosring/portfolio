@@ -8,7 +8,6 @@ export const useProjectStore = defineStore('useProject', {
         stack: ['Nuxt JS', 'Express', 'Mongodb'],
         web_link: 'https://onc-foundation.netlify.app',
         source: null,
-        inDevelopment: true,
         private: true
       },
       {
@@ -18,7 +17,6 @@ export const useProjectStore = defineStore('useProject', {
         stack: ['Vue', 'Scss', 'Firebase'],
         web_link: 'https://ease-7f317.firebaseapp.com/',
         source: 'https://github.com/sosring/ease-ecom',
-        inDevelopment: false,
         private: false 
       }
     ]

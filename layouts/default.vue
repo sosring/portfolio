@@ -25,6 +25,7 @@
 </template>
 
 <script setup>
+  import gsap from 'gsap'
   const showNav = ref(false)
 </script>
 

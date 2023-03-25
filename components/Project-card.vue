@@ -1,17 +1,15 @@
 <template>
 
       <article class="text-gray-700   
-        font-raleway overflow-hidden"
+        font-raleway overflow-hidden
+        bg-gray-50  rounded-md"
        :class="shadowClass">
 
-    <!--
       <img :src="`/projects/${project.img}.png`" 
         :alt="project.img"
-        class="mb-4 object-cover rounded-md">
-    -->
+        class="mb-4 object-cover">
 
-        <div class="px-4 py-2
-         bg-gray-50 rounded-md">
+        <div class="px-4 py-2">
 
           <h3 class="heading 
            font-medium mb-4 active" 
@@ -26,12 +24,10 @@
             </li>
           </ul>
 
-
-          <p v-html="devStatus"
-           class="text-xs font-bold mb-2"></p>
-
+        <!--
           <p v-html="project.summary"
            class="summary"></p>
+        -->
 
           <!-- Links -->
           <div class="flex gap-3 my-3">
@@ -75,10 +71,6 @@
 
   const shadowClass = computed(() => {
     return props.index / 2 ? 'shadow-blue-200' : 'shadow-red-200'   
-  })
-
-  const devStatus = computed(() => {
-    return props.project.inDevelopment ? 'UNDER DEVELOPERMENT' : 'LIVE'
   })
 </script>
 
