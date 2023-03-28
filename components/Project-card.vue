@@ -2,12 +2,14 @@
 
       <article class="text-gray-700   
         font-raleway overflow-hidden
-        bg-gray-50  rounded-md"
+        bg-gray-50  rounded-md shadow-lg"
        :class="shadowClass">
 
+    <!--
       <img :src="`/projects/${project.img}.png`" 
         :alt="project.img"
         class="mb-4 object-cover">
+    -->
 
         <div class="px-4 py-2">
 
@@ -24,10 +26,8 @@
             </li>
           </ul>
 
-        <!--
           <p v-html="project.summary"
            class="summary"></p>
-        -->
 
           <!-- Links -->
           <div class="flex gap-3 my-3">
