@@ -4,7 +4,7 @@
    flex items-center justify-center">
 
     <article class="w-full
-     lg:text-center">
+     lg:text-center mb-12">
 
       <h2 class="heading stroke 
        text-secoundary font-thin
