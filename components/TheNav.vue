@@ -85,8 +85,8 @@
 
   const mobileRef = ref('') 
   const navBtnRef = ref('')
-  onClickOutside(mobileRef, () => showNav.value = false, 
-   { ignore: [navBtnRef] })
+  const closeNav = () => showNav.value = false
+  onClickOutside(mobileRef, closeNav, { ignore: [navBtnRef] })
 
   const anchors = [ 'About', 'Portfolio', 'Contact' ]
 
