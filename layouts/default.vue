@@ -2,10 +2,8 @@
 
   <div>
 
-  <TheNav v-model:showNav="showNav" 
+  <TheNav 
    v-model:currentSection="currentSection"/>
-
-  <MobileNav v-model:showNav="showNav" />
 
     <main class="h-screen 
      pt-16 md:pt-0">
@@ -26,7 +24,6 @@
 <script setup>
   import gsap from 'gsap'
 
-  const showNav = ref(false)
   const currentSection = useState('currentSection', () => 'about') 
 
   // Intersection Observer

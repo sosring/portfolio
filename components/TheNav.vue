@@ -47,13 +47,15 @@
   <aside v-show="showNav" ref="mobileRef"
    class="fixed top-20 sm:top-24
    right-2 sm:right-12 text-center 
-   rounded border py2 px-4 z-10 
-   backdrop-blur-lg md:hidden block">
+   rounded border py-2 px-4 z-10 
+   backdrop-blur-lg md:hidden
+   grid items-end">
 
-    <ul class="grid items-end">
+    <ul class="">
       <li v-for="anchor in anchors">
-       <nuxt-link :to="`#${anchor.toLowerCase()}`"
+       <nuxt-link
         @click="closeNav"
+        :to="`#${anchor.toLowerCase()}`"
         class="font-poppins text-sm">
         {{ anchor }}
        </nuxt-link>
