@@ -4,7 +4,7 @@
     mx-auto px-4 py-12
     font-montserrat">
     
-    <article class="font-thin
+    <article class="about-wrapper font-thin
      grid gap-4 sm:gap-6 lg:grid-cols-2">
 
      <div class="space-y-4">

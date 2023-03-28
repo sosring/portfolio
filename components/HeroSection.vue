@@ -16,7 +16,7 @@
         </h3>
 
         <p class="quote text-light">
-         Cradling digital experiences that bring your vision to life.
+         Crafting seamless digital experiences that bring your vision to life.
         </p>
       </div>
 
@@ -46,9 +46,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    transform: translate(3%, -7%);
+    transform: translate(2%, -6%);
     position: absolute;
     animation: shift 1.3s;
+    animation-delay: 1s;
     z-index: 0;
   }
 
