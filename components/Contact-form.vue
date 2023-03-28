@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-   import emailjs from 'emailjs-com'
+   import emailjs from 'emailjs'
 
    const config = useRuntimeConfig().public
 

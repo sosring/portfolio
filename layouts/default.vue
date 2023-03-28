@@ -2,11 +2,10 @@
 
   <div>
 
-  <TheNav 
-    v-model:showNav="showNav" />
+  <TheNav v-model:showNav="showNav" 
+   v-model:currentSection="currentSection"/>
 
-  <TheMobileNav 
-    v-model:showNav="showNav" />
+  <MobileNav v-model:showNav="showNav" />
 
     <main class="h-screen 
      pt-16 md:pt-0">
@@ -26,7 +25,27 @@
 
 <script setup>
   import gsap from 'gsap'
+
   const showNav = ref(false)
+  const currentSection = useState('currentSection', () => 'about') 
+
+  // Intersection Observer
+  onMounted(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.intersectionRatio > 0) {
+          currentSection.value = entry.target.getAttribute('id')
+        } 
+      })
+    },
+    {
+      rootMargin: '0px 0px -90px 0px',
+    }
+    );
+    document.querySelectorAll('section h2').forEach(section => {
+      observer.observe(section)
+    })
+  }) 
 </script>
 
 <style scoped>
