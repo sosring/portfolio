@@ -35,14 +35,13 @@
   import { onClickOutside } from '@vueuse/core'
 
   const props = defineProps({
-    showNav: Boolean
+    showNav: Boolean,
+    mobileRef: String
   });
 
   const emits = defineEmits(['update:showNav'])
 
   const anchors = [ 'About', 'Portfolio', 'Contact' ]
-
-  const mobileRef = ref('') 
 
   const closeNav = () => emits('update:showNav', false)
 
