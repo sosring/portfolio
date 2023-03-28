@@ -1,40 +1,41 @@
 <template>
 
-  <form class="max-w-xl mx-auto px-2
+  <form class="max-w-lg mx-auto px-2
    py-4 text-sm sm:text-base font-medium
-   font-raleway text-gray-500 "
+   font-raleway text-gray-500"
    @submit.prevent="sendMail">
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <input class="form-inputs" type="text" placeholder="Name"
+
+  <div class="sm:grid grid-cols-2 sm:gap-4">
+    <div>
+      <input class="form-inputs" type="text" 
+       placeholder="Name"
        v-model="credentials.fullname">
     </div>
-    <div class="w-full md:w-1/2 px-3">
-      <input class="form-inputs" type="email" placeholder="Email"
+    <div>
+      <input class="form-inputs" type="email" 
+       placeholder="Email"
        v-model="credentials.email">
     </div>
   </div>
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full px-3">
-      <input class="form-inputs" type="text" placeholder="Subject"
+
+    <div class="w-full">
+      <input class="form-inputs" type="text" 
+       placeholder="Subject"
        v-model="credentials.subject">
     </div>
-  </div>
     
-    <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full px-3">
+    <div class="w-full">
       <textarea rows="10" 
        class="form-inputs"
        placeholder="Message"
        v-model="credentials.message" />
     </div>
 
-    <div class="text-end w-full px-3">
+    <div class="text-end w-full">
       <input type="submit"
        :disabled="checkFields" value="Say Hi!"
        :class="checkFields ? 'disabled-btn' : 'submit-btn'">
     </div>
-  </div>
 </form>
 
 </template>
