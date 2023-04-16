@@ -2,7 +2,8 @@
 
       <article class="text-gray-700   
         font-raleway overflow-hidden
-        bg-gray-50  rounded-md shadow-lg"
+        bg-gray-50  rounded-md shadow-lg
+        hover:scale-105 duration-200"
        :class="shadowClass">
 
     <!--
