@@ -11,7 +11,7 @@
       <div class="stack-wrapper
        mt-4 grid grid-cols-3 gap-4">
 
-        <div class="flex items-end 
+        <div class="flex items-end bg-primary 
          justify-around p-3 shadow-md rounded-md"
          v-for="stack in stacks">
 
