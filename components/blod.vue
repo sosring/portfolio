@@ -19,7 +19,7 @@
     <div class="absolute rounded-full -z-10
      bg-gradient-to-r from-secoundary to-accent
      blur-3xl -translate-x-1/2 -translate-y-1/2
-     pointer-events-none"
+     pointer-events-none hidden lg:block"
      :style="{
       top: `${y}px`,
       left: `${x}px`,
